@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Child Monitoring System</string>
+    <string name="btnRegister">REGISTER</string>
+    <string name="btnLogin">LOGIN</string>
+    <string name="username">Enter username</string>
+    <string name="password">Password</string>
+
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddChild">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:background="@color/mainColor"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD NEW CHILD"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="0dp"
+            android:layout_marginTop="23sp"
+            android:textSize="35dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addChildForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="20sp">
+
+        <ImageView
+            android:id="@+id/addChildImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="131dp"
+            android:background="#03A8F3"
+            app:srcCompat="@drawable/ic_launcher_foreground"
+            android:layout_marginBottom="25dp"
+            />
+
+        <!--For name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textColor="@color/black"
+            android:textSize="20sp"></TextView>
+
+        <EditText
+            android:id="@+id/AddChildName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D5D9DC"
+            android:inputType="textPersonName"
+            android:text="Enter your name..."
+            android:textColor="@color/black" />
+
+
+        <!--For email -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-Mail:"
+            android:textColor="@color/black"
+            android:textSize="20sp"></TextView>
+
+        <EditText
+            android:id="@+id/AddChildEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D5D9DC"
+            android:inputType="textEmailAddress"
+            android:text="Enter child E-Mail"
+            android:textColor="@color/black" />
+
+
+        <!--For age -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age:"
+            android:textColor="@color/black"
+            android:textSize="20sp"></TextView>
+
+        <EditText
+            android:id="@+id/AddChildAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D5D9DC"
+            android:inputType="text"
+            android:text="Enter child age"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnAddNewChild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35sp"
+            android:background="@color/mainColor"
+            android:text="ADD"
+            android:textColor="@color/white"
+            android:textSize="30dp">
+
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>
