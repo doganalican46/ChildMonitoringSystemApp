@@ -34,6 +34,9 @@ Basically, the project is to develop a Child Monitoring System Application. The 
   The application should must have to user-friendly interfaces. The target audience is parents so we 
   need to design something simple but totally useful. For the design part we will use AdobeXD. 
   There are two main users for this app. We just need 1 log-in page and 3 or maybe more then 3 module pages.
+  
+  ![image](https://user-images.githubusercontent.com/76850300/200071047-16277b71-9841-4527-ac18-dad179a2e3ee.png)
+
 
 ___________________________________________________________________________________________________________________
 
