@@ -21,7 +21,8 @@
             android:textColor="@color/white"
             android:layout_gravity="center"
             android:layout_marginTop="20sp"
-            android:textSize="40dp"/>
+            android:textSize="40dp"
+            android:textStyle="bold"/>
 
     </LinearLayout>
 
@@ -81,6 +82,23 @@
 
         <EditText
             android:id="@+id/registerPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D5D9DC"
+            android:inputType="numberPassword"
+            android:text="password"
+            android:textColor="@color/black" />
+
+        <!--For confirmpassword -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password:"
+            android:textColor="@color/black"
+            android:textSize="20sp"></TextView>
+
+        <EditText
+            android:id="@+id/registerConfirmPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#D5D9DC"

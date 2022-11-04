@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:background="@color/white"
     >
     <LinearLayout
         android:id="@+id/header"
@@ -21,42 +22,49 @@
             android:textColor="@color/white"
             android:layout_gravity="center"
             android:layout_marginTop="35dp"
-            android:textSize="20dp"/>
+            android:textSize="30dp"
+            android:textStyle="bold"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnLogin"
+            android:layout_above="@+id/btnRegister"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:textSize="30dp"
+            android:background="@color/mainColor"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            >
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnRegister"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="120dp"
+            android:textSize="30dp"
+            android:background="@color/mainColor"
+            android:textColor="@color/white"
+            android:textStyle="bold">
+
+        </Button>
 
     </LinearLayout>
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btnLogin"
-        android:layout_above="@+id/btnRegister"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
-        android:textSize="30dp"
-        android:background="@color/mainColor"
-        android:textColor="@color/white"
-        >
 
-    </Button>
-
-    <Button
-        android:id="@+id/btnRegister"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btnRegister"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="120dp"
-        android:textSize="30dp"
-        android:background="@color/mainColor"
-        android:textColor="@color/white">
-
-    </Button>
 
 </RelativeLayout>

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EditChild">
+    tools:context=".EditChild"
+    android:background="@color/white">
 
 
 
@@ -25,27 +26,44 @@
             android:textSize="35dp"/>
     </LinearLayout>
 
-
-
     <LinearLayout
-        android:id="@+id/editChildForm"
+        android:id="@+id/addChildForm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
         android:background="@color/white"
         android:orientation="vertical"
-        android:padding="20sp">
+        android:padding="10sp">
 
-        <ImageView
-            android:id="@+id/childImage"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="131dp"
-            android:background="#03A8F3"
-            app:srcCompat="@drawable/ic_launcher_foreground"
-            android:layout_marginBottom="25dp"
-            />
+            android:id="@+id/addImage">
+            <ImageView
+                android:id="@+id/EditChildImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="131dp"
+                android:background="#03A8F3"
+                app:srcCompat="@drawable/ic_launcher_foreground"
+                android:layout_marginBottom="25dp"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSelectImage"
+                android:textStyle="bold"
+                android:text="Select ımage"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="bottom"
+                android:textSize="10dp">
+
+            </Button>
+        </LinearLayout>
+
 
         <!--For name -->
         <TextView
@@ -53,7 +71,8 @@
             android:layout_height="wrap_content"
             android:text="Name:"
             android:textColor="@color/black"
-            android:textSize="20sp"></TextView>
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
 
         <EditText
             android:id="@+id/EditChildName"
@@ -64,13 +83,16 @@
             android:text="Enter your name..."
             android:textColor="@color/black" />
 
+
         <!--For age -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Age:"
             android:textColor="@color/black"
-            android:textSize="20sp"></TextView>
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"></TextView>
 
         <EditText
             android:id="@+id/EditChildAge"
@@ -81,26 +103,63 @@
             android:text="Enter child age"
             android:textColor="@color/black" />
 
-
-        <!--For email -->
+        <!--For child id -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="E-Mail:"
+            android:text="Current Child ID:"
             android:textColor="@color/black"
-            android:textSize="20sp"></TextView>
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            ></TextView>
 
         <EditText
-            android:id="@+id/EditChildEmail"
+            android:id="@+id/CurrentChildID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#D5D9DC"
-            android:inputType="textEmailAddress"
-            android:text="Enter child E-Mail"
+            android:inputType="numberPassword"
+            android:text="password"
             android:textColor="@color/black" />
 
+        <!--For child id -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Child ID:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"></TextView>
 
+        <EditText
+            android:id="@+id/EditChildID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D5D9DC"
+            android:inputType="numberPassword"
+            android:text="password"
+            android:textColor="@color/black" />
 
+        <!--For child password -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm New ID:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"></TextView>
+
+        <EditText
+            android:id="@+id/EditChildPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D5D9DC"
+            android:inputType="numberPassword"
+            android:text="password"
+            android:textColor="@color/black" />
 
         <Button
             android:id="@+id/btnSaveChildInfo"
