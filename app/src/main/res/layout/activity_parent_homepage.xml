@@ -1,57 +1,111 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:Android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    Android:layout_width="match_parent"
+    Android:layout_height="match_parent"
     tools:context=".ParentHomepage"
-    android:background="@color/white">
+    Android:background="@color/white"
+    Android:id="@+id/activity_map">
 
     <LinearLayout
-        android:id="@+id/header"
-        android:layout_width="match_parent"
-        android:layout_height="100sp"
-        android:background="@color/mainColor"
-        android:orientation="vertical">
+        Android:id="@+id/header"
+        Android:layout_width="match_parent"
+        Android:layout_height="100sp"
+        Android:background="@color/mainColor"
+        Android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="PARENT HOMEPAGE"
-            android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:layout_marginHorizontal="0dp"
-            android:layout_marginTop="30sp"
-            android:textSize="30dp"
-            android:textStyle="bold"/>
+            Android:layout_width="wrap_content"
+            Android:layout_height="wrap_content"
+            Android:text="PARENT HOMEPAGE"
+            Android:textColor="@color/white"
+            Android:layout_gravity="center"
+            Android:layout_marginHorizontal="0dp"
+            Android:layout_marginTop="30sp"
+            Android:textSize="30dp"
+            Android:textStyle="bold"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/btnLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:padding="50sp"
-        android:orientation="vertical">
+        Android:id="@+id/selectChild"
+        Android:layout_width="match_parent"
+        Android:layout_height="150dp"
+        Android:orientation="horizontal"
+        Android:layout_above="@id/mapLayout"
+        >
+        <TextView
+            Android:layout_width="wrap_content"
+            Android:layout_height="wrap_content"
+            Android:text="Child Selection part"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        Android:id="@+id/mapLayout"
+        Android:layout_width="match_parent"
+        Android:layout_height="350dp"
+        Android:layout_above="@+id/btnLayout"
+        Android:orientation="horizontal">
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            tools:context=".ParentMap"
+            android:layout_below="@+id/search"
+            android:layout_marginTop="0dp"/>
+
+        <ZoomControls
+            Android:layout_width="wrap_content"
+            Android:layout_height="wrap_content"
+            Android:id="@+id/zoom"
+            Android:layout_gravity="bottom">
+        </ZoomControls>
+        <Button
+            Android:layout_width="wrap_content"
+            Android:layout_height="wrap_content"
+            Android:id="@+id/btn_uydu"
+            Android:text="uydu"
+            Android:layout_gravity="bottom">
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        Android:id="@+id/btnLayout"
+        Android:layout_width="match_parent"
+        Android:layout_height="130dp"
+        Android:layout_alignParentStart="true"
+        Android:layout_alignParentBottom="true"
+        Android:layout_marginBottom="1dp"
+        Android:orientation="vertical"
+        Android:padding="10dp"
+        >
 
         <Button
-            android:id="@+id/btnAddChild"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ADD NEW CHILD"
-            android:textColor="@color/white"
-            android:textSize="25dp">
+            Android:id="@+id/btnAddChild"
+            Android:layout_width="wrap_content"
+            Android:layout_height="wrap_content"
+            Android:text="ADD NEW CHILD"
+            Android:textColor="@color/white"
+            Android:textSize="25dp">
 
         </Button>
 
         <Button
-            android:id="@+id/btnEditChild"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="EDIT CHILD INFO"
-            android:textColor="@color/white"
-            android:textSize="25dp">
+            Android:id="@+id/btnEditChild"
+            Android:layout_width="wrap_content"
+            Android:layout_height="wrap_content"
+            Android:text="EDIT CHILD INFO"
+            Android:textColor="@color/white"
+            Android:textSize="25dp"
+            Android:layout_gravity="right">
 
         </Button>
 
